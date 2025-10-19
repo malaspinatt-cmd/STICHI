@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AligeraT Checklist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#38e07b",
+              "background-light": "#f6f8f7",
+              "background-dark": "#122017",
+              "text-light": "#122017",
+              "text-dark": "#f6f8f7",
+              "text-muted-light": "#6b7280",
+              "text-muted-dark": "#9ca3af",
+              "border-light": "#e5e7eb",
+              "border-dark": "#374151"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col h-full relative">
+<header class="sticky top-0 z-20 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between p-4">
+<div class="w-16"></div>
+<h1 class="text-lg font-bold text-center flex-1">Checklist</h1>
+<div class="w-16"></div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto pb-44">
+<div class="p-4">
+<div class="bg-primary/10 dark:bg-primary/20 border border-primary/20 dark:border-primary/30 rounded-lg p-4 text-center">
+<p class="text-sm text-primary font-medium">Peso total de la mochila</p>
+<p class="text-3xl font-bold text-primary">3.2 kg</p>
+</div>
+</div>
+<div class="space-y-1">
+<details class="group">
+<summary class="flex items-center justify-between px-4 py-3 cursor-pointer bg-background-light dark:bg-background-dark/80 sticky top-[65px] border-y border-border-light dark:border-border-dark">
+<h3 class="text-base font-semibold">Ropa</h3>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<ul class="divide-y divide-border-light dark:divide-border-dark">
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input checked="" class="h-6 w-6 rounded border-2 border-primary bg-primary text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-1" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Camiseta de manga larga</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">250g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input checked="" class="h-6 w-6 rounded border-2 border-primary bg-primary text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-2" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Pantalones de senderismo</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">450g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input class="h-6 w-6 rounded border-2 border-text-muted-light dark:border-text-muted-dark text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-3" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Calcetines de senderismo</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">80g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input checked="" class="h-6 w-6 rounded border-2 border-primary bg-primary text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-4" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Chaqueta impermeable</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">350g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+</ul>
+</details>
+<details class="group">
+<summary class="flex items-center justify-between px-4 py-3 cursor-pointer bg-background-light dark:bg-background-dark/80 sticky top-[65px] border-y border-border-light dark:border-border-dark">
+<h3 class="text-base font-semibold">Equipamiento</h3>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<ul class="divide-y divide-border-light dark:divide-border-dark">
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input checked="" class="h-6 w-6 rounded border-2 border-primary bg-primary text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-5" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Mochila</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">1500g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input checked="" class="h-6 w-6 rounded border-2 border-primary bg-primary text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-6" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Botiquín de primeros auxilios</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">500g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+<li class="px-4 py-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<input class="h-6 w-6 rounded border-2 border-text-muted-light dark:border-text-muted-dark text-primary focus:ring-primary focus:ring-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark" id="selected-7" type="checkbox"/>
+<div class="flex-1 pr-2">
+<p class="font-medium">Linterna frontal</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">120g</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark">swap_horiz</span>
+</button>
+</div>
+</div>
+</li>
+</ul>
+</details>
+</div>
+</main>
+<div class="fixed inset-0 bg-black/50 z-30 hidden" id="modal-backdrop"></div>
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-background-light dark:bg-background-dark rounded-t-xl p-4 transform translate-y-full transition-transform duration-300 ease-in-out" id="modal">
+<div class="flex justify-between items-center pb-4 border-b border-border-light dark:border-border-dark">
+<h2 class="text-lg font-bold">Sustituir Ítem</h2>
+<button class="text-text-muted-light dark:text-text-muted-dark" id="close-modal">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="py-4">
+<p class="mb-4">Selecciona un ítem para reemplazar <span class="font-bold">Mochila</span>:</p>
+<div class="space-y-2 max-h-64 overflow-y-auto">
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/10">
+<div>
+<p>Mochila ligera</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">1200g</p>
+</div>
+<button class="px-4 py-2 text-sm font-semibold text-primary rounded-lg border border-primary hover:bg-primary/10">Seleccionar</button>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/10">
+<div>
+<p>Mochila de expedición</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">2000g</p>
+</div>
+<button class="px-4 py-2 text-sm font-semibold text-primary rounded-lg border border-primary hover:bg-primary/10">Seleccionar</button>
+</div>
+</div>
+</div>
+</div>
+<button class="fixed bottom-24 right-4 z-20 w-16 h-16 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-3xl">sos</span>
+</button>
+<footer class="fixed bottom-0 left-0 right-0 z-20 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<nav class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center justify-center w-full text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="text-xs font-medium">Inventario</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#">
+<span class="material-symbols-outlined">hiking</span>
+<span class="text-xs font-medium">Travesías</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full text-primary" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<span class="text-xs font-medium">Checklist</span>
+</a>
+</nav>
+</footer>
+</div>
+<script>
+    const modal = document.getElementById('modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const closeModalButton = document.getElementById('close-modal');
+    const substituteButtons = document.querySelectorAll('button[class*="swap_horiz"]');
+    function openModal() {
+        modal.classList.remove('translate-y-full');
+        modalBackdrop.classList.remove('hidden');
+    }
+    function closeModal() {
+        modal.classList.add('translate-y-full');
+        modalBackdrop.classList.add('hidden');
+    }
+    substituteButtons.forEach(button => {
+        button.addEventListener('click', openModal);
+    });
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+</script>
+
+</body></html>

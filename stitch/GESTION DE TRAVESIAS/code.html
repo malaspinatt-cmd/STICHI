@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AligeraT - Gestión de Travesías</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4CAF50",
+            "background-light": "#f0fdf4",
+            "background-dark": "#101c22",
+            "surface-light": "#ffffff",
+            "surface-dark": "#1c2a33",
+            "text-light": "#111618",
+            "text-dark": "#f0f3f4",
+            "subtle-light": "#6b7280",
+            "subtle-dark": "#a0b0b9",
+            "danger": "#e53e3e",
+            "primary-700": "#2E7D32",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex flex-col min-h-screen w-full">
+<header class="bg-surface-light dark:bg-primary-700/20 backdrop-blur-sm sticky top-0 z-10 border-b border-background-light dark:border-primary-700/30">
+<div class="flex items-center p-4">
+<div class="w-12"></div>
+<h1 class="text-lg font-bold flex-1 text-center">Gestión de Travesías</h1>
+<div class="w-12 flex justify-end">
+<button class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/10">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow p-4 space-y-6">
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-lg space-y-4">
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark" for="travesia-select">Seleccionar Travesía Guardada</label>
+<div class="relative">
+<select class="block w-full appearance-none rounded-lg bg-background-light dark:bg-background-dark border-transparent focus:border-primary focus:ring-primary text-text-light dark:text-text-dark py-3 pl-4 pr-10" id="travesia-select">
+<option>Travesía de Montaña</option>
+<option>Aventura en el Desierto</option>
+<option>Peregrinación</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-subtle-light dark:text-subtle-dark">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-lg space-y-4">
+<div class="flex justify-between items-center">
+<h3 class="text-lg font-bold">Travesía de Montaña</h3>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center h-9 w-9 rounded-full text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary">
+<span class="material-symbols-outlined !text-xl">edit</span>
+</button>
+<button class="flex items-center justify-center h-9 w-9 rounded-full text-subtle-light dark:text-subtle-dark hover:bg-primary/10 hover:text-primary">
+<span class="material-symbols-outlined !text-xl">content_copy</span>
+</button>
+<button class="flex items-center justify-center h-9 w-9 rounded-full text-subtle-light dark:text-subtle-dark hover:bg-danger/10 hover:text-danger">
+<span class="material-symbols-outlined !text-xl">delete</span>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">place</span>
+<p>Monte Verde</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">calendar_today</span>
+<p>3 días</p>
+</div>
+</div>
+<div>
+<h4 class="text-subtle-light dark:text-subtle-dark text-sm font-medium mb-1">Resumen de Ítems</h4>
+<div class="bg-background-light dark:bg-background-dark p-3 rounded-lg">
+<p class="text-sm">23 Ítems | Peso total: 8.5 kg</p>
+</div>
+</div>
+<div class="space-y-3">
+<h4 class="text-subtle-light dark:text-subtle-dark text-sm font-medium">Anotaciones</h4>
+<div class="space-y-2">
+<div class="relative">
+<select class="block w-full appearance-none rounded-lg bg-background-light dark:bg-background-dark border-transparent focus:border-primary focus:ring-primary py-3 pl-4 pr-10">
+<option>Nota</option>
+<option>Recordatorio</option>
+<option>Dato Importante</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-subtle-light dark:text-subtle-dark">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<textarea class="block w-full rounded-lg bg-background-light dark:bg-background-dark border-transparent focus:border-primary focus:ring-primary placeholder-subtle-light dark:placeholder-subtle-dark" placeholder="Escribe tu anotación aquí..." rows="4"></textarea>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-4 bg-primary text-white text-base font-bold hover:bg-primary-700">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+          Generar PDF
+        </button>
+</div>
+</main>
+<div class="fixed bottom-24 right-4 z-20">
+<button class="flex items-center justify-center rounded-full h-16 w-16 bg-danger text-white shadow-lg">
+<span class="material-symbols-outlined !text-4xl">sos</span>
+</button>
+</div>
+<footer class="sticky bottom-0 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-sm border-t border-background-light dark:border-background-dark/50">
+<nav class="flex justify-around items-center h-16 px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-subtle-light dark:text-subtle-dark w-1/4" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/4" href="#">
+<span class="material-symbols-outlined !font-bold" style="font-variation-settings: 'FILL' 1">terrain</span>
+<p class="text-xs font-bold">Travesías</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-subtle-light dark:text-subtle-dark w-1/4" href="#">
+<span class="material-symbols-outlined">backpack</span>
+<p class="text-xs font-medium">Inventario</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-subtle-light dark:text-subtle-dark w-1/4" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<p class="text-xs font-medium">Checklist</p>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-surface-light/80 dark:bg-surface-dark/80"></div>
+</footer>
+</div>
+
+</body></html>

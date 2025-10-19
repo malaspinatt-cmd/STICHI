@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AligeraT - Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#38e07b",
+            "primary-700": "#2aa85c",
+            focus: "#5eff9b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+            "card-dark": "#1A2E22",
+            "surface-dark": "#1A2E22",
+            "surface-light": "#FFFFFF",
+            muted: "rgba(255, 255, 255, 0.7)",
+            danger: "#ef4444",
+          },
+          fontFamily: {
+            display: ["Inter"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "1rem",
+            xl: "1.5rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .icon-button {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white/90 flex flex-col h-full">
+<div class="relative flex-1 flex flex-col min-h-0">
+<header class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-20 sticky top-0">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-16">
+<div class="flex-1 flex items-center justify-start">
+<button class="icon-button rounded-full hover:bg-white/10">
+<span class="material-symbols-outlined text-xl">dark_mode</span>
+</button>
+</div>
+<h1 class="text-3xl font-bold text-white/90 z-10 relative text-center flex items-center justify-center">
+<span class="relative inline-block h-[32px] w-[32px]">
+<svg class="watermark text-white w-[58px] h-auto" fill="none" style="left: calc(50% - 1px); top: 52%;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L1 22H23L12 2Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M8.5 15L12 9L15.5 15H8.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<span class="ml-[-32px] z-10">A</span>ligeraT
+          </h1>
+<div class="flex-1 flex items-center justify-end">
+<button class="w-[44px] h-[44px] rounded-full bg-danger hover:bg-red-500 flex items-center justify-center shadow-lg text-white font-bold text-sm">
+<span>SOS</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto no-scrollbar p-4 space-y-4 pb-24">
+<div class="bg-card-dark p-3 rounded-xl shadow-md space-y-3">
+<h2 class="text-sm font-bold text-white/90 px-1">Perfil de Travesía</h2>
+<div class="grid grid-cols-1 gap-3">
+<div class="flex items-center gap-2">
+<div class="flex-1">
+<label class="text-xs text-white/70" for="destino">Destino</label>
+<input class="w-full bg-white/10 border-0 rounded-md h-10 text-sm text-white/90 placeholder:text-white/50 mt-1 px-3" id="destino" placeholder="Pirineos" type="text"/>
+</div>
+<div class="w-20">
+<label class="text-xs text-white/70" for="duracion">Días</label>
+<input class="w-full bg-white/10 border-0 rounded-md h-10 text-sm text-white/90 placeholder:text-white/50 mt-1 px-3" id="duracion" placeholder="3" type="number"/>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 flex items-center justify-center gap-2 h-10 rounded-md bg-white/10 hover:bg-white/20 text-sm font-medium">
+<span class="material-symbols-outlined text-xl">save</span>
+<span>Guardar Perfil</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 h-10 rounded-md bg-white/10 hover:bg-white/20 text-sm font-medium">
+<span class="material-symbols-outlined text-xl">upload_file</span>
+<span>Cargar Perfil</span>
+</button>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center px-1">
+<h2 class="text-base font-bold text-white/90">LISTA DE EQUIPO</h2>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 h-9 px-4 rounded-full bg-white/10 hover:bg-white/20 text-white/90 text-sm font-medium">
+<span class="material-symbols-outlined !text-lg">add</span>
+<span>Categoría</span>
+</button>
+<button class="flex items-center gap-1.5 h-9 px-4 rounded-full bg-primary/20 hover:bg-primary/30 text-primary font-semibold text-sm ring-1 ring-primary/50">
+<span class="material-symbols-outlined !text-lg">add</span>
+<span>Ítem</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">apparel</span>
+<span class="text-[10px] leading-tight font-semibold">ROPA MARCHA Y EXTRAS</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-700">backpack</span>
+<span class="text-[10px] leading-tight font-semibold">EQUIPO DE CARGA</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-focus">night_shelter</span>
+<span class="text-[10px] leading-tight font-semibold">REFUGIO</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">bed</span>
+<span class="text-[10px] leading-tight font-semibold">DESCANSO</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-700">outdoor_grill</span>
+<span class="text-[10px] leading-tight font-semibold">EQUIPO DE COCINA</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-focus">restaurant</span>
+<span class="text-[10px] leading-tight font-semibold">COMIDA</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">water_drop</span>
+<span class="text-[10px] leading-tight font-semibold">HIDRATACIÓN Y TRATAMIENTO</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-700">layers</span>
+<span class="text-[10px] leading-tight font-semibold">VESTIMENTA CAPA A CAPA</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-focus">electrical_services</span>
+<span class="text-[10px] leading-tight font-semibold">ELECTRÓNICA Y REPARACIÓN</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">medical_services</span>
+<span class="text-[10px] leading-tight font-semibold">BOTIQUÍN, HIGIENE Y EMERGENCIA</span>
+</button>
+<button class="flex flex-col items-center justify-center text-center p-1 rounded-lg bg-card-dark min-h-[80px] space-y-1.5 hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-700">more_horiz</span>
+<span class="text-[10px] leading-tight font-semibold">MISCELÁNEA</span>
+</button>
+</div>
+</div>
+<div class="bg-card-dark p-3 rounded-xl shadow-md space-y-3">
+<div class="flex justify-between items-center px-1">
+<div class="text-sm font-medium text-white/70">Peso Base: <span class="font-bold text-white/90">5.4 kg</span></div>
+<div class="text-sm font-medium text-white/70">Peso Total: <span class="font-bold text-primary">7.9 kg</span></div>
+</div>
+<div class="border-t border-white/10 pt-3">
+<div class="flex items-end gap-3 px-1">
+<div class="flex-1">
+<label class="text-xs text-white/70" for="peso-corporal">Tu peso (kg)</label>
+<input class="w-full bg-white/10 border-0 rounded-md h-9 text-sm text-white/90 placeholder:text-white/50 mt-1 px-3" id="peso-corporal" placeholder="70" type="number"/>
+</div>
+<div class="flex-1 text-right">
+<p class="text-xs text-white/70">Máx. recomendado:</p>
+<p class="text-base font-bold text-primary mt-0.5">14.0 kg</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-surface-light dark:bg-surface-dark/90 backdrop-blur-sm border-t border-white/10 z-30">
+<div class="container mx-auto px-4">
+<div class="flex justify-around items-center h-16 text-muted">
+<a class="flex flex-col items-center justify-center w-11 h-11 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 400;">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-11 h-11 hover:text-primary text-opacity-70" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="text-xs font-medium">Inventario</span>
+</a>
+<a class="flex flex-col items-center justify-center w-11 h-11 hover:text-primary text-opacity-70" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-xs font-medium">Travesías</span>
+</a>
+<a class="flex flex-col items-center justify-center w-11 h-11 hover:text-primary text-opacity-70" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<span class="text-xs font-medium">Checklist</span>
+</a>
+</div>
+</div>
+</nav>
+</div>
+</body></html>

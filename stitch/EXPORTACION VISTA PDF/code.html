@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AligeraT - Vista Previa PDF</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-strong {
+            color: #E0E2E1;
+        }
+        .text-subtle {
+            color: #9BA9A2;
+        }
+        .border-divider {
+            border-color: #233529;
+        }
+        .bg-surface {
+            background-color: #1A2D21;
+        }
+        .dark .text-strong {
+            color: #E0E2E1;
+        }
+        .dark .text-subtle {
+            color: #9BA9A2;
+        }
+        .dark .border-divider {
+            border-color: #233529;
+        }
+        .dark .bg-surface {
+            background-color: #1A2D21;
+        }
+        .light .text-strong {
+            color: #122017;
+        }
+        .light .text-subtle {
+            color: #5F6D64;
+        }
+        .light .border-divider {
+            border-color: #E0E7E2;
+        }
+        .light .bg-surface {
+            background-color: #FFFFFF;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="max-w-md mx-auto min-h-screen flex flex-col">
+<header class="p-6 flex justify-between items-center">
+<button class="text-strong">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="text-lg font-bold text-strong">Vista Previa</h1>
+<div class="w-8"></div>
+</header>
+<main class="flex-grow p-6 pt-0">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-bold text-primary">AligeraT</h2>
+<p class="text-sm text-subtle">20 de Julio, 2024</p>
+</div>
+<section class="mb-8">
+<div class="bg-surface rounded-lg p-4">
+<div class="flex items-center gap-4">
+<div class="flex-shrink-0 size-12 bg-primary/20 text-primary rounded-lg flex items-center justify-center">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M164,80a28,28,0,1,0-28-28A28,28,0,0,0,164,80Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,40Zm90.88,155.92-54.56-92.08A15.87,15.87,0,0,0,186.55,96h0a15.85,15.85,0,0,0-13.76,7.84L146.63,148l-44.84-76.1a16,16,0,0,0-27.58,0L1.11,195.94A8,8,0,0,0,8,208H248a8,8,0,0,0,6.88-12.08ZM88,80l23.57,40H64.43ZM22,192l33-56h66l18.74,31.8,0,0L154,192Zm150.57,0-16.66-28.28L186.55,112,234,192Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-bold text-strong">Travesía a la Montaña</h3>
+<p class="text-sm text-subtle">Destino: Pirineos / 4 días</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-xl font-bold text-strong mb-4">Resumen de Pesos</h3>
+<div class="grid grid-cols-2 gap-3 text-sm">
+<div class="flex justify-between items-center">
+<p class="text-subtle">Peso Corporal</p>
+<p class="font-medium text-strong">75 kg</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-subtle">Límite Rec.</p>
+<p class="font-medium text-strong">15 kg</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-subtle">Peso Base</p>
+<p class="font-medium text-strong">5.2 kg</p>
+</div>
+<div class="flex justify-between items-center text-base">
+<p class="font-bold text-strong">Peso Total</p>
+<p class="font-bold text-primary">6.7 kg</p>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-xl font-bold text-strong mb-4">Lista de Ítems</h3>
+<div class="space-y-6">
+<div>
+<h4 class="font-bold text-primary mb-3">Refugio</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Tienda de campaña</p>
+<p class="text-subtle text-xs">Base</p>
+</div>
+<span class="text-strong font-medium">1.5 kg</span>
+</li>
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Saco de dormir</p>
+<p class="text-subtle text-xs">Base</p>
+</div>
+<span class="text-strong font-medium">1.2 kg</span>
+</li>
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Colchoneta</p>
+<p class="text-subtle text-xs">Base</p>
+</div>
+<span class="text-strong font-medium">0.5 kg</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-3">Cocina</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Hornillo</p>
+<p class="text-subtle text-xs">LLEVADO</p>
+</div>
+<span class="text-strong font-medium">0.3 kg</span>
+</li>
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Comida liofilizada</p>
+<p class="text-subtle text-xs">Consumible / Nota: 4 cenas</p>
+</div>
+<span class="text-strong font-medium">0.8 kg</span>
+</li>
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Olla</p>
+<p class="text-subtle text-xs">Base</p>
+</div>
+<span class="text-strong font-medium">0.2 kg</span>
+</li>
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Cubiertos</p>
+<p class="text-subtle text-xs flex items-center gap-1"><span class="material-symbols-outlined text-base">lock</span> Locked</p>
+</div>
+<span class="text-strong font-medium">0.1 kg</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-3">Ropa</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start justify-between">
+<div>
+<p class="text-strong">Chaqueta impermeable</p>
+<p class="text-subtle text-xs">LLEVADO</p>
+</div>
+<span class="text-strong font-medium">0.4 kg</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-xl font-bold text-strong mb-4">Anotaciones</h3>
+<div class="space-y-3">
+<div class="bg-surface rounded-lg p-3">
+<p class="text-xs font-semibold text-primary mb-1">Nota</p>
+<p class="text-sm text-strong">Revisar el pronóstico del tiempo antes de salir.</p>
+</div>
+<div class="bg-surface rounded-lg p-3">
+<p class="text-xs font-semibold text-yellow-400 mb-1">Recordatorio</p>
+<p class="text-sm text-strong">Llamar a casa al llegar al refugio.</p>
+</div>
+<div class="bg-surface rounded-lg p-3">
+<p class="text-xs font-semibold text-red-400 mb-1">Dato Importante</p>
+<p class="text-sm text-strong">Teléfono de emergencia del parque: 112</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="p-6 sticky bottom-0 bg-background-dark/80 backdrop-blur-sm">
+<button class="w-full bg-primary text-background-dark font-bold py-4 rounded-lg">
+                Generar PDF
+            </button>
+</footer>
+</div>
+
+</body></html>

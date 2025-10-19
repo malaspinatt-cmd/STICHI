@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<title>AligeraT - Inventario</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2c21",
+                        "on-surface-light": "#1a1c1a",
+                        "on-surface-dark": "#e2e3e0",
+                        "on-surface-variant-light": "#424943",
+                        "on-surface-variant-dark": "#c2c9c1",
+                        "outline-light": "#727973",
+                        "outline-dark": "#8c938b"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex flex-col h-screen justify-between max-w-md mx-auto">
+<header class="bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex items-center justify-between p-4">
+<h1 class="text-2xl font-bold text-on-surface-light dark:text-on-surface-dark flex-1 text-center">Inventario Central</h1>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/20 dark:bg-primary/30 text-on-surface-light dark:text-on-surface-dark font-bold text-sm">
+                    SOS
+                </button>
+</div>
+<div class="px-4 pb-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant-light dark:text-on-surface-variant-dark">search</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl border-none bg-surface-light dark:bg-surface-dark text-on-surface-light dark:text-on-surface-dark placeholder-on-surface-variant-light dark:placeholder-on-surface-variant-dark focus:ring-2 focus:ring-primary" placeholder="Buscar por nombre, tipo, peso..." type="text"/>
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-4 space-y-2 pb-4">
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg" x-data="{ open: true }">
+<button @click="open = !open" class="w-full flex justify-between items-center p-4">
+<h2 class="font-bold text-lg text-on-surface-light dark:text-on-surface-dark">Ropa</h2>
+<span :class="open ? 'rotate-180' : ''" class="material-symbols-outlined transition-transform">expand_more</span>
+</button>
+<div class="divide-y divide-outline-light/50 dark:divide-outline-dark/50" x-show="open">
+<div class="flex items-center gap-4 p-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">dry_cleaning</span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-on-surface-light dark:text-on-surface-dark">Camiseta térmica</p>
+<p class="text-sm text-on-surface-variant-light dark:text-on-surface-variant-dark">100g</p>
+</div>
+<div class="flex gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">SYSTEM</span>
+</div>
+<div class="flex gap-1">
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-primary">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="p-2 text-gray-400 dark:text-gray-600 cursor-not-allowed">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">man</span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-on-surface-light dark:text-on-surface-dark">Pantalón de trekking (Propio)</p>
+<p class="text-sm text-on-surface-variant-light dark:text-on-surface-variant-dark">250g</p>
+</div>
+<div class="flex gap-2">
+</div>
+<div class="flex gap-1">
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-primary">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-red-500">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">trip</span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-on-surface-light dark:text-on-surface-dark">Bastones de trekking</p>
+<p class="text-sm text-on-surface-variant-light dark:text-on-surface-variant-dark">0g</p>
+</div>
+<div class="flex gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300">SYSTEM</span>
+</div>
+<div class="flex gap-1">
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-primary">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="p-2 text-gray-400 dark:text-gray-600 cursor-not-allowed">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark rounded-lg" x-data="{ open: true }">
+<button @click="open = !open" class="w-full flex justify-between items-center p-4">
+<h2 class="font-bold text-lg text-on-surface-light dark:text-on-surface-dark">Botiquín</h2>
+<span :class="open ? 'rotate-180' : ''" class="material-symbols-outlined transition-transform">expand_more</span>
+</button>
+<div class="divide-y divide-outline-light/50 dark:divide-outline-dark/50" x-show="open">
+<div class="flex items-center gap-4 p-4">
+<div class="flex-shrink-0 size-12 rounded-lg bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">medication</span>
+</div>
+<div class="flex-1">
+<p class="font-medium text-on-surface-light dark:text-on-surface-dark">Crema Solar</p>
+<p class="text-sm text-on-surface-variant-light dark:text-on-surface-variant-dark">50g</p>
+</div>
+<div class="flex gap-2">
+<span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-500/20 text-yellow-500">Consumible</span>
+</div>
+<div class="flex gap-1">
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-primary">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+<button class="p-2 text-on-surface-variant-light dark:text-on-surface-variant-dark hover:text-red-500">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="absolute bottom-24 right-4">
+<button class="flex items-center justify-center size-14 bg-primary text-background-dark rounded-full shadow-lg">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<footer class="bg-surface-light dark:bg-surface-dark shadow-t-sm sticky bottom-0">
+<nav class="flex justify-around items-center h-20 px-2 pb-4">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant-light dark:text-on-surface-variant-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">inventory_2</span>
+<span class="text-xs font-medium">Inventario</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant-light dark:text-on-surface-variant-dark" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-xs font-medium">Travesías</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant-light dark:text-on-surface-variant-dark" href="#">
+<span class="material-symbols-outlined">checklist</span>
+<span class="text-xs font-medium">Checklist</span>
+</a>
+</nav>
+</footer>
+</div>
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</body></html>
